@@ -2,10 +2,11 @@ import '@/public/css/style.css'
 import Layout from './components/Layout';
 import Head from 'next/head';
 export default function App({ Component, pageProps }) {
-  
-  return(
-   <div>
-     <Head>
+
+  return (
+    <div>
+      <Head>
+
         <title>Fakeins</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <link href='https://fonts.googleapis.com/css?family=MuseoModerno' rel='stylesheet'>
@@ -17,9 +18,9 @@ export default function App({ Component, pageProps }) {
         <link href='https://fonts.googleapis.com/css?family=Mali' rel='stylesheet'>
         </link>
       </Head>
-  <Layout>
-  <Component {...pageProps} />
-  </Layout>
-  </div>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </div>
   );
 }

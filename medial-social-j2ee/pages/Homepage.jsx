@@ -1,6 +1,8 @@
+import styles from '@/styles/Homepage.module.css'
+import Image from 'next/image';
 const Homepage = () => {
     return (
-        <div>
+        <div className={styles.container}>
             Content
         </div>
     );

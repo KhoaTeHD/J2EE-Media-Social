@@ -6,15 +6,22 @@
     color: black;
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-family: "Mali";
-  
+    /* position: absolute;
+    bottom: 0;
+    left: 200px;
+    right: 0px; */
+    clear: both;
+    position: relative;
+    height: 100px;
+    /* left: 120px; */
   }
   
   .top,
   .bottom {
     display: flex;
     align-items: center;
+    overflow: hidden;
   }
   
   .item {

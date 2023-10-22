@@ -16,11 +16,18 @@ const Login = () => {
                     </div>
                     <div className={styles.right}>
                         <div className={styles.title}>Đăng nhập</div>
-                        <form className={styles.form_box}>
-                            <input className={styles.input} type="text" placeholder="Username" />
-                            <input className={styles.input} type="password" placeholder="Password" />
-                            <button className={styles.btn}>Đăng nhập</button>
-                        </form>
+                        <div className={styles.input_box}>
+                            <input className={styles.input} type="text" required/>
+                            <label className={styles.text_input} htmlFor="">Tài khoản</label>
+                            <div className={styles.underline} ></div>
+                        </div>
+                        <div className={styles.input_box}>
+                            <input className={styles.input} type="text" required/>
+                            <label className={styles.text_input} htmlFor="">Mật khẩu</label>
+                            <div className={styles.underline} ></div>
+                        </div>
+                        <button className={styles.btn}>Đăng nhập</button>
+
                     </div>
                 </div>
             </div>
@@ -28,4 +35,4 @@ const Login = () => {
     );
 }
 
-export default Login;
+export default Login

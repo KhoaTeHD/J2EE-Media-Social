@@ -18,10 +18,11 @@ const register = () => {
         <div className={styles.right}>
           <h1 className={styles.title}>Register</h1>
           <form className={styles.form_box}>
-            <input className={styles.input} type="text" placeholder="Username" />
             <input className={styles.input} type="email" placeholder="Email" />
-            <input className={styles.input} type="password" placeholder="Password" />
-            <input className={styles.input} type="text" placeholder="Name" />
+
+            <input className={styles.input} type="password" placeholder="Mật khẩu" />
+            <input className={styles.input} type="password" placeholder="Nhập lại mật khẩu" />
+            <input className={styles.input} type="text" placeholder="Tên" />
             <button className={styles.btn}>Đăng ký</button>
           </form>
         </div>
