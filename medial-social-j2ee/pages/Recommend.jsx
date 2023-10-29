@@ -2,7 +2,7 @@ import React from "react";
 import styles from '@/styles/Recommend.module.css';
 import Image from 'next/image';
 
-export default function FriendList(){
+export default function Recommend(){
     return(
         <div className={styles.container}>
             <div className={styles.container_top}>
@@ -23,8 +23,7 @@ export default function FriendList(){
                                 <div className={styles.recommend_card_mutual_friends}>Có 8 Bạn chung</div>
                             </div>
                             <div className={styles.recommend_card_action}>
-                                <div className={`${styles.recommend_card_action_button} ${styles.warning}`}>Hủy kết bạn</div>
-                                <div className={styles.recommend_card_action_button}>Nhắn tin</div>
+                                <div className={styles.recommend_card_action_button}>Thêm bạn bè</div>
                             </div>
                         </div>
                         <div className={styles.recommend_card}>
@@ -35,8 +34,7 @@ export default function FriendList(){
                                 <div className={styles.recommend_card_mutual_friends}>Có 11 Bạn chung</div>
                             </div>
                             <div className={styles.recommend_card_action}>
-                                <div className={`${styles.recommend_card_action_button} ${styles.warning}`}>Hủy kết bạn</div>
-                                <div className={styles.recommend_card_action_button}>Nhắn tin</div>
+                                <div className={styles.recommend_card_action_button}>Thêm bạn bè</div>
                             </div>
                         </div>
                         <div className={styles.recommend_card}>
@@ -47,8 +45,7 @@ export default function FriendList(){
                                 <div className={styles.recommend_card_mutual_friends}>Có 22 Bạn chung</div>
                             </div>
                             <div className={styles.recommend_card_action}>
-                                <div className={`${styles.recommend_card_action_button} ${styles.warning}`}>Hủy kết bạn</div>
-                                <div className={styles.recommend_card_action_button}>Nhắn tin</div>
+                                <div className={styles.recommend_card_action_button}>Thêm bạn bè</div>
                             </div>
                         </div>
                         <div className={styles.recommend_card}>
@@ -59,8 +56,7 @@ export default function FriendList(){
                                 <div className={styles.recommend_card_mutual_friends}>Có 17 Bạn chung</div>
                             </div>
                             <div className={styles.recommend_card_action}>
-                                <div className={`${styles.recommend_card_action_button} ${styles.warning}`}>Hủy kết bạn</div>
-                                <div className={styles.recommend_card_action_button}>Nhắn tin</div>
+                                <div className={styles.recommend_card_action_button}>Thêm bạn bè</div>
                             </div>
                         </div>
                         <div className={styles.recommend_card}>
@@ -71,8 +67,7 @@ export default function FriendList(){
                                 <div className={styles.recommend_card_mutual_friends}>Có 10 Bạn chung</div>
                             </div>
                             <div className={styles.recommend_card_action}>
-                                <div className={`${styles.recommend_card_action_button} ${styles.warning}`}>Hủy kết bạn</div>
-                                <div className={styles.recommend_card_action_button}>Nhắn tin</div>
+                                <div className={styles.recommend_card_action_button}>Thêm bạn bè</div>
                             </div>
                         </div>
                     </div>

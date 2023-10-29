@@ -110,12 +110,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1;
+    flex-direction: column;
+    flex: 1.1;
 }
 
-.recommend_card_add_friend {
+.recommend_card_action_button {
     width: 140px;
     height: 40px;
+    margin: auto;
     border-radius: 12px;
     background-color:  #c9eff8;
     color: #06252d;
@@ -125,4 +127,8 @@
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
     border: rgba(0, 0, 0, 0.25) solid 1px;
     cursor: pointer;
+}
+
+.warning {
+    background-color: rgb(235, 24, 24);
 }
