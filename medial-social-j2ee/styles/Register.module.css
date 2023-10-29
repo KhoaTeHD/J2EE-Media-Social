@@ -94,18 +94,91 @@
     color: #555;
 }
 
-.form_box {
+/* .form_box {
     display: flex;
     flex-direction: column;
     gap: 30px;
+} */
+.input_box {
+    position: relative;
+    margin: 10px 40px 0px 0px;
+    padding: 15px 0px 0px;
+    overflow: hidden;
+
 }
 
-.input {
+.input[type="text"],
+.input[type="email"],
+.input[type="password"] {
+    font-size: 20px;
+    width: 100%;
     border: none;
-    border-bottom: 1px solid lightgray;
-    padding: 20px 10px;
-    font-family: "Mali";
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+    font-family: 'Mali';
+    color: black;
+}
 
+.text_input {
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    top: 0px;
+    left: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-family: 'Mali';
+    padding: 20px 0px;
+
+}
+.input[type="text"]:focus~.text_input,
+.input[type="text"]:valid~.text_input {
+    top: -24px;
+    font-size: 18px;
+    color: #007bff;
+    font-family: 'Mali';
+}
+.input[type="password"]:focus~.text_input,
+.input[type="password"]:valid~.text_input {
+    top: -24px;
+    font-size: 18px;
+    color: #007bff;
+    font-family: 'Mali';
+}
+.input[type="email"]:focus~.text_input,
+.input[type="email"]:valid~.text_input {
+    top: -24px;
+    font-size: 18px;
+    color: #007bff;
+    font-family: 'Mali';
+}
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #3d3b3b;
+    transition: all 0.3s ease;
+    transform: scaleX(0);
+}
+
+.input[type="text"]:focus~.underline,
+.input[type="text"]:valid~.underline {
+    transform: scaleX(1);
+    background-color: #007bff;
+}
+.input[type="password"]:focus~.underline,
+.input[type="password"]:valid~.underline {
+    transform: scaleX(1);
+    background-color: #007bff;
+}
+.input[type="email"]:focus~.underline,
+.input[type="email"]:valid~.underline {
+    transform: scaleX(1);
+    background-color: #007bff;
 }
 
 .btnLogin {

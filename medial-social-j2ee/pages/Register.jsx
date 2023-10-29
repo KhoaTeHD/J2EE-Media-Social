@@ -17,14 +17,28 @@ const register = () => {
         </div>
         <div className={styles.right}>
           <h1 className={styles.title}>Register</h1>
-          <form className={styles.form_box}>
-            <input className={styles.input} type="email" placeholder="Email" />
+          <div className={styles.input_box}>
+            <input className={styles.input} type="email" required />
+            <label className={styles.text_input} htmlFor="">Email</label>
+            <div className={styles.underline} ></div>
+          </div>
+          <div className={styles.input_box}>
+            <input className={styles.input} type="password" required />
+            <label className={styles.text_input} htmlFor="">Mật khẩu</label>
+            <div className={styles.underline} ></div>
+          </div>
+          <div className={styles.input_box}>
+            <input className={styles.input} type="password" required />
+            <label className={styles.text_input} htmlFor="">Nhập lại mật khẩu</label>
+            <div className={styles.underline} ></div>
+          </div>
+          <div className={styles.input_box}>
+            <input className={styles.input} type="text" required />
+            <label className={styles.text_input} htmlFor="">Tên người dùng</label>
+            <div className={styles.underline} ></div>
+          </div>
+          <button className={styles.btn}>Đăng ký</button>
 
-            <input className={styles.input} type="password" placeholder="Mật khẩu" />
-            <input className={styles.input} type="password" placeholder="Nhập lại mật khẩu" />
-            <input className={styles.input} type="text" placeholder="Tên" />
-            <button className={styles.btn}>Đăng ký</button>
-          </form>
         </div>
       </div>
     </div>

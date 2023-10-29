@@ -1,7 +1,7 @@
 .container {
     width: 300px;
-    background-color: #137B95;
-    color: #9ca3af;
+    background-color: white;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,6 +13,8 @@
     height: 100%;
     box-sizing: border-box;
     padding-top: 20px;
+    border-right: 1px solid #d3d3d3;
+
 }
 
 .top,
@@ -21,19 +23,22 @@
     display: flex;
     align-items: center;
     width: 80%;
-    border-bottom: 1px solid #4b4b4b;
     padding: 10px 0;
     margin-bottom: 10px;
     overflow: hidden;
-    background-color: #137B95;
+    background-color: white;
     color: #9ca3af;
+    justify-content: center;
+}
+.bottom{
+    bottom: 0;
+    position: absolute;
 }
 .text{
     font-size: 20px;
     color: #06252d;
     font-family: "Mali";
     margin: 0px 10px;
-    text-decoration: none;
 
 }
 .center {
@@ -67,12 +72,14 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
+    text-decoration: none;
+
 }
 .icon{
     font-size: 20px;
 }
 .list_item:hover{
-    background-color: #1CB3D9;
+    background-color: #c4c4c4;
     color: white;
 }
 @media only screen and (max-width: 768px) {

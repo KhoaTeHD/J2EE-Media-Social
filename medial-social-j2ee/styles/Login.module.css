@@ -95,12 +95,6 @@
     font-size: 22px;
 }
 
-/* .input {
-    border: none;
-    border-bottom: 1px solid lightgray;
-    padding: 20px 10px;
-    font-family: "Mali";
-} */
 .input_box {
     position: relative;
     margin: 10px 40px 0px 0px;
@@ -108,43 +102,6 @@
     overflow: hidden;
 }
 
-/* .input{
-    display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    outline: none;
-    background-color: transparent;
-}
-.text_input{
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 16px;
-    color: black;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    padding: 20px 0px;
-}
-.underline{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 0;
-    background-color: #007bff;
-    transition: all 0.3s ease;
-}
-.input:focus + .text_input{
-    top: -20px;
-    font-size: 16px;
-    color: #007bff;
-}
-.input:focus + .text_input + .underline {
-    width: 100%;
-  } */
 .input[type="text"] {
     font-size: 20px;
     width: 100%;
