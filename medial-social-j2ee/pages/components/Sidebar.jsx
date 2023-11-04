@@ -1,9 +1,23 @@
 import styles from '@/styles/Sidebar.module.css'
 import Link from "next/link";
 import Image from 'next/image';
+import Head from 'next/head';
+import { useState } from 'react';
+var status = 'show';
 const Sidebar = () => {
+    function changeSidebar() {
+        if (status == 'show')
+                status = 'hide';
+        else
+            status = 'show';
+        document.getElementById('sidebar').setAttribute('animation', status);
+    }
+
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='sidebar' animation="show">
+            <Head>
+                <link rel="stylesheet" href="/css/animation/SidebarAnimation.css" />
+            </Head>
             <div className={styles.top}>
                 <Link className={styles.logo} href={"/home"}>
                     <Image src="" alt="" width="80" height="80" />
@@ -15,10 +29,10 @@ const Sidebar = () => {
                         <Image className={styles.icon} src="/icons/icons8-home-64.png" alt="" width="40" height="40" />
                         <p className={styles.text}>Trang chủ</p>
                     </Link>
-                    <Link className={styles.list_item} href={"/home"}>
+                    <button onClick={changeSidebar} className={styles.button} >
                         <Image className={styles.icon} src="/icons/icons8-search-64.png" alt="" width="40" height="40" />
-                        <p className={styles.text}>Tìm kiếm</p>
-                    </Link>
+                        <p className={styles.text} id='search' >Tìm kiếm</p>
+                    </button>
                     <Link className={styles.list_item} href={"/home"}>
                         <Image className={styles.icon} src="/icons/icons8-add-64.png" alt="" width="40" height="40" />
                         <p className={styles.text}>Tạo bài viết</p>

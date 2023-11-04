@@ -16,7 +16,20 @@
     border-right: 1px solid #d3d3d3;
 
 }
-
+.button{
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+}
 .top,
 .center,
 .bottom {
@@ -39,7 +52,7 @@
     color: #06252d;
     font-family: "Mali";
     margin: 0px 10px;
-
+    text-wrap: nowrap;
 }
 .center {
     padding: 0;
@@ -89,4 +102,5 @@
     .text {
       display: none;
     }
-  }
+}
+  
