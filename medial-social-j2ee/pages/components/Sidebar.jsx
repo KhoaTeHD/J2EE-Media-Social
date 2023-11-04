@@ -2,14 +2,20 @@ import styles from '@/styles/Sidebar.module.css'
 import Link from "next/link";
 import Image from 'next/image';
 import Head from 'next/head';
-import { useState } from 'react';
-var status = 'show';
+
+
+
 const Sidebar = () => {
+    var status = 'show';
     function changeSidebar() {
-        if (status == 'show')
-                status = 'hide';
-        else
+        if (status == 'show'){
+            status = 'hide';
+            document.getElementById('searchBox').classList.toggle('none');
+        }
+        else{
             status = 'show';
+            document.getElementById('searchBox').classList.toggle('none');
+        }
         document.getElementById('sidebar').setAttribute('animation', status);
     }
 
@@ -67,6 +73,7 @@ const Sidebar = () => {
                     </Link>
                 </ul>
             </div>
+
         </div>
     );
 }

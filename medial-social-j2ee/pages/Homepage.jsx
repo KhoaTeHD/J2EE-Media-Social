@@ -5,6 +5,7 @@ const Homepage = () => {
         <div className={styles.container}>
             Content
         </div>
+        
     );
 }
 

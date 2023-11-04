@@ -19,6 +19,9 @@
   animation: show_hide 0.5s ease;
   width: 75px;
 }
+#sidebar[animation=hide] p {
+  display: none;
+}
 
 #sidebar[animation=show] {
   width: 75px;

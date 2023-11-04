@@ -25,6 +25,9 @@ $status : "hide";
 }
 #sidebar[animation="hide"]{
     width: 300px;
+    p{
+        display: none;
+    }
     animation: show_hide 0.5s ease;
     @include hideProp();
     
