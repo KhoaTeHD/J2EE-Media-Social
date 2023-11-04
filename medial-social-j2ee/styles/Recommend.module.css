@@ -4,7 +4,7 @@
     margin-left: 300px;
     background-color: white;
     overflow: hidden;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 0px 10px rgba(0, 0, 0, 0.22);
+
 }
 
 .container_top{
@@ -115,6 +115,8 @@
 }
 
 .recommend_card_action_button {
+    font-family: 'Segoe UI';
+    font-weight: 500;
     width: 140px;
     height: 40px;
     margin: auto;
@@ -130,5 +132,5 @@
 }
 
 .warning {
-    background-color: rgb(235, 24, 24);
+    background-color: rgb(227, 61, 61);
 }
