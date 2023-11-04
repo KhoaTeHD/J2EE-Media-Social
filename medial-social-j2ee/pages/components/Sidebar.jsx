@@ -6,16 +6,11 @@ import Head from 'next/head';
 
 
 const Sidebar = () => {
-    var status = 'show';
     function changeSidebar() {
-        if (status == 'show'){
-            status = 'hide';
-            document.getElementById('searchBox').classList.toggle('none');
-        }
-        else{
-            status = 'show';
-            document.getElementById('searchBox').classList.toggle('none');
-        }
+        let status='show';
+        document.getElementById('searchBox').classList.toggle('none');
+        let checkExist = document.getElementById('searchBox').classList.contains('none');
+        status = checkExist ? 'show' : 'hide';
         document.getElementById('sidebar').setAttribute('animation', status);
     }
 
