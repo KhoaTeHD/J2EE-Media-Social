@@ -7,7 +7,7 @@ import Head from 'next/head';
 
 const Sidebar = () => {
     function changeSidebar() {
-        let status='show';
+        let status = 'show';
         document.getElementById('searchBox').classList.toggle('none');
         let checkExist = document.getElementById('searchBox').classList.contains('none');
         status = checkExist ? 'show' : 'hide';
@@ -46,7 +46,7 @@ const Sidebar = () => {
                         <Image className={styles.icon} src="/icons/icons8-message-64.png" alt="" width="40" height="40" />
                         <p className={styles.text}>Tin nhắn</p>
                     </Link>
-                    <Link className={styles.list_item} href={"/home"}>
+                    <Link className={styles.list_item} href={"/Profile"}>
                         <Image className={styles.icon} src="/icons/icons8-user-64.png" alt="" width="40" height="40" />
                         <p className={styles.text}>Trang cá nhân</p>
                     </Link>
